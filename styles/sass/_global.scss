@@ -87,7 +87,13 @@ section a {
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 32px;
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     background-color: $accent;
+}
+
+button:hover,
+button:focus {
+    background-color: $orangey-yellow;
 }

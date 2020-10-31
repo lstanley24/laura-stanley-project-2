@@ -5,6 +5,7 @@ h2 {
     color: $black;
     font-size: 4.2rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -13,11 +14,160 @@ h3 {
     color: $black;
     font-size: 3.2rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
-// styling "Who is Sophie?" section aka the first "find-out-more" section. 
+section a {
+    padding: 20px;
+}
 
-.find-out-more {
-    background-color: $white-shade;
+section p {
+    padding: 15px 0 35px 0; 
+}
+
+
+// styling "Who is Sophie?" section 
+
+.who-is-sophie {
+    width: 70%;
+    padding: 100px 0 100px 0;
+}
+
+// general styling for "Sophie's Favourite Things", "Where She's Travelled", and "Sophie's Journey" sections
+
+.favourite-things,
+.where-shes-travelled,
+.sophie-journey {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 0 50px 0;
+}
+
+// general styling for the section that contains "Sophie's Favourite Things," "Where She's Travelled" + images. Primarily, changing the background colour to white.
+
+.favourite-travelled-wrapper {
+    background-color: $white;
+}
+
+//styling "Sophie's Favourite Things" section
+
+.favourite-things-text {
+    max-width: 50%;
+}
+
+// .favourite-things-img {
+//     background-color: $rust-red;
+//     width: 110%;
+// }
+
+// .favourite-things img {
+//     position: relative;
+//     top: -15px;
+//     left: 90px;
+// }
+
+// styling "Where's She's Travelled" section 
+
+
+
+
+
+
+// styling the photos/about/blog/get in touch section on home page
+
+.quick-facts-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0 50px 0;
+}
+
+.quick-facts-wrapper i {
+    background-color: $orangey-yellow;
+    padding: 15px;
+    border-radius: 50%;
+    transform: translateY(55px) translateX(-5px);
+}
+
+.photos-info-text,
+.about-info-text,
+.blog-info-text,
+.get-in-touch-text {
+    margin: 0 35px 0 65px;
+}
+
+
+
+// styling "Sophie's Journey" section on home page 
+
+.sophie-journey {
+    margin: 50px 0 50px 0;
+}
+
+.sophie-journey-text-wrapper {
+    max-width: 60%;
+  
+}
+
+.sophie-journey img {
+    box-shadow: 15px 15px $orangey-yellow;
+}
+
+
+// styling the image gallery on the home page
+
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 50px 0 50px 0;
+}
+
+.image-gallery ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+//styling for the social media + email + address side-bar on the contact page 
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+//the above contact section wrapper also wraps the contact form
+
+.contact-socials {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    margin: 0;
+}
+
+.contact-socials ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-socials a {
+    background-color: transparent;
+    color: $orangey-yellow;
+}
+
+.contact-socials a:hover,
+.contact-socials a:focus {
+    color: $accent;
+}
+
+.contact-section p {
+    padding: 0;
 }
