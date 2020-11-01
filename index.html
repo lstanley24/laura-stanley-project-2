@@ -7,58 +7,62 @@
     <script src="https://kit.fontawesome.com/ce85cdd91a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content.</a>
-    <header>
-        <div class="wrapper">
-            <div class="nav-wrapper">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li class="nav-logo">Sophie</li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="home-header-container">
-                <div class="logo-container">
-                    <figure class="additional-logo-text">
-                        <img src="./assets/circle-text.png" alt="curved white text that reads 'it's all about'">
-                    </figure>
-                    <h1 class="logo-text">Sophie</h1>
+    </head>
+    <body>
+        <!-- for screen readers -->
+        <a href="#main-content" class="skip-link">Skip to main content.</a>
+        <header>
+            <div class="wrapper">
+                <div class="nav-wrapper">
+                    <!-- For hamburger menu icon in mobile   -->
+                    <label for="toggle"><i class="fa fa-bars"></i><span class="sr-only">Click here to access menu</span></label>
+                    <input type="checkbox" id="toggle" name="toggle">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li class="nav-logo">Sophie</li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                <div class="home-header-container">
+                    <div class="logo-container">
+                        <figure class="additional-logo-text">
+                            <img src="./assets/circle-text.png" alt="curved white text that reads 'it's all about'">
+                        </figure>
+                        <h1 class="logo-text">Sophie</h1>
+                    </div>
 
-                <figure class="header-img-sophie">
-                    <img src="./assets/blog-image-2.jpg"
-                        alt="a woman, Sophie, wears an oversize read sweater and has her hair up in to buns. She playfully uses a halved orange as her eyes.">
-                </figure>
-            </div>
-        </div>
-    </header>
-    <main id="main-content">
-        <div class="wrapper">
-            <section class="who-is-sophie">
-
-                <h2>Who Is Sophie?</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum enim excepturi voluptatum nam dolor ab, nostrum natus vero? Iusto reiciendis praesentium eos a repudiandae? Dolore libero officiis odio eligendi.<p>
-
-                <a href="#">Find out more</a>
-            </section>
-        </div>
-        <section class="favourite-travelled-wrapper">           
-            <div class="favourite-things">
-                <div class="favourite-things-img">
-                    
-                    <figure>
-                        <img src="./assets/home-image-2.jpg" alt="a brown dog looking out of the window of an orange car">
+                    <figure class="header-img-sophie">
+                        <img src="./assets/blog-image-2.jpg"
+                            alt="a woman, Sophie, wears an oversize red sweater and has her hair up in two buns. She playfully holds up a halved orange and pretends they are her eyes.">
                     </figure>
                 </div>
-                
+            </div>
+        </header>
+        <main id="main-content">
+            <div class="wrapper">
+                <section class="who-is-sophie">
+
+                    <h2>Who Is Sophie?</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum enim excepturi voluptatum nam dolor ab, nostrum natus vero? Iusto reiciendis praesentium eos a repudiandae? Dolore libero officiis odio eligendi.<p>
+
+                    <a href="#">Find out more</a>
+                </section>
+            </div>
+            <section class="favourite-travelled-wrapper">           
                 <div class="wrapper">
+                    <div class="favourite-things">
+                
+                    <div class="favourite-things-img">
+                        <figure>
+                            <img src="./assets/home-image-2.jpg" alt="a brown dog looking out of the window of an orange car">
+                        </figure>
+                    </div>
+                
                     <div class="favourite-things-text">
 
                         <h3>Sophie's Favourite Things?</h3>
@@ -67,130 +71,134 @@
                         <a href="#">Read More</a>
 
                     </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="where-shes-travelled">
-                <div class="where-shes-travelled-text">
+                <div class="wrapper">
+                    <div class="where-shes-travelled">
+                        <div class="where-shes-travelled-text">
 
-                    <h3>Where's She's Travelled</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa. Incidunt tempore repudiandae tempora fugit nemo dicta atque consequuntur inventore sequi, sit amet ex eos placeat voluptatibus vel illum. Vero?</p>
-                    
-                    <a href="#">Read More</a>
+                            <h3>Where's She's Travelled</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa. Incidunt tempore repudiandae tempora fugit nemo dicta atque consequuntur inventore sequi, sit amet ex eos placeat voluptatibus vel illum. Vero?</p>
+                            
+                            <a href="#">Read More</a>
 
+                        </div>
+                        
+                        <figure>
+                            <img src="./assets/home-image-3.jpg" alt="rows of teal beach chairs in the sand. A few orange beach umbrellas are propped up besides the chairs">
+                        </figure>
+                        
+                    </div>
+        
                 </div>
                 
+            </section>
+
+            <section>
+                <div class="wrapper">
+                    <div class="quick-facts-wrapper">
+                        <!-- I consider all of the below icons to be decorative elements only which is why I didn't include an aria-label -->
+                        <div class="quick-facts-row-one">
+
+                            <div class="photos-info">
+
+                                <i aria-hidden="true" class="fas fa-image"></i>
+
+                                <div class="photos-info-text">
+
+                                    <h4>Photos</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam inventore delectus dolore nesciunt, minus error nam accusamus, quae perspiciatis voluptate necessitatibus ipsum quia perferendis corrupti unde excepturi dignissimos totam. </p>
+                                </div>
+
+                            </div>
+
+                            <div class="blog-info">
+                            
+                                <i aria-hidden="true" class="fas fa-desktop"></i>
+                                <div class="blog-info-text">
+                            
+                                    <h4>Blog</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum aut incidunt, consequuntur placeat
+                                        libero totam quidem, maxime veniam distinctio, non provident ipsum nisi modi fugiat velit aperiam hic
+                                        necessitatibus.</p>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="quick-facts-row-two">
+                            <div class="about-info">
+                            
+                                <i aria-hidden="true" class="fas fa-user"></i>
+                            
+                                <div class="about-info-text">
+                            
+                                    <h4>About</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam inventore delectus dolore nesciunt,
+                                        minus error nam accusamus, quae perspiciatis voluptate necessitatibus ipsum quia perferendis corrupti unde
+                                        excepturi dignissimos totam. </p>
+                            
+                                </div>
+                            
+                            </div>
+
+                            <div class="get-in-touch-info">
+
+                                <i aria-hidden="true" class="fas fa-phone"></i>
+
+                                <div class="get-in-touch-text">
+
+                                    <h4>Get in touch</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum aut incidunt, consequuntur placeat libero totam quidem, maxime veniam distinctio, non provident ipsum nisi modi fugiat velit aperiam hic necessitatibus.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
                 <figure>
-                    <img src="./assets/home-image-3.jpg" alt="a group of teal beach chairs placed in the sand. A few orange beach umbrellas are propped up besides the chairs">
+                    <img src="./assets/home-image-4.jpg" alt="a close-up shot of a few rows of orange, foldable plastic seats. Likely located in a theatre">
                 </figure>
-            </div>
-            
-        </section>
 
-        <section>
-            <div class="wrapper">
-                <div class="quick-facts-wrapper">
-                    <!-- I consider all of the below icons to be decorative elements only which is why I didn't include an aria-label -->
-                    <div class="quick-facts-row-one">
-
-                        <div class="photos-info">
-
-                            <i aria-hidden="true" class="fas fa-image"></i>
-
-                            <div class="photos-info-text">
-
-                                <h4>Photos</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam inventore delectus dolore nesciunt, minus error nam accusamus, quae perspiciatis voluptate necessitatibus ipsum quia perferendis corrupti unde excepturi dignissimos totam. </p>
-                            </div>
-
+                <div class="wrapper">
+                    <div class="sophie-journey">
+                        <div class="sophie-journey-img-wrapper">
+                            <figure>
+                                <img src="./assets/home-image-5.jpg" alt="a woman, Sophie, wearing an orange shirt, ripped blue jeans and sunglasses staring off into the distance. Highrise buildings sit in the background">
+                            </figure>
                         </div>
+                        <div class="sophie-journey-text-wrapper">
 
-                        <div class="blog-info">
-                        
-                            <i aria-hidden="true" class="fas fa-desktop"></i>
-                            <div class="blog-info-text">
-                        
-                                <h4>Blog</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum aut incidunt, consequuntur placeat
-                                    libero totam quidem, maxime veniam distinctio, non provident ipsum nisi modi fugiat velit aperiam hic
-                                    necessitatibus.</p>
-                            </div>
-                        
-                        </div>
+                            <h2>Sophie's Journey</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex accusamus qui ad, asperiores deserunt natus quis omnis? Dicta alias voluptatibus aspernatur neque voluptatum autem aut, similique, quibusdam ducimus recusandae consectetur consequatur. Fugiat tenetur id odio incidunt sapiente sed libero commodi assumenda iusto doloribus. Vero corrupti, quos quas vel consequatur adipisci.</p>
 
-                    </div>
-
-                    <div class="quick-facts-row-two">
-                        <div class="about-info">
-                        
-                            <i aria-hidden="true" class="fas fa-user"></i>
-                        
-                            <div class="about-info-text">
-                        
-                                <h4>About</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam inventore delectus dolore nesciunt,
-                                    minus error nam accusamus, quae perspiciatis voluptate necessitatibus ipsum quia perferendis corrupti unde
-                                    excepturi dignissimos totam. </p>
-                        
-                            </div>
-                        
-                        </div>
-
-                        <div class="get-in-touch-info">
-
-                            <i aria-hidden="true" class="fas fa-phone"></i>
-
-                            <div class="get-in-touch-text">
-
-                                <h4>Get in touch</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum aut incidunt, consequuntur placeat libero totam quidem, maxime veniam distinctio, non provident ipsum nisi modi fugiat velit aperiam hic necessitatibus.</p>
-
-                            </div>
+                            <a href="#">Find out more</a>
 
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
+            <section class="image-gallery">
+                <div class="wrapper">
 
-        <section>
-            <figure>
-                <img src="./assets/home-image-4.jpg" alt="a close-up shot of two rows of orange, foldable plastic seats. Likely located in a stadium">
-            </figure>
+                    <ul>
+                        <li><img src="./assets/home-image-6.jpg" alt="a teal bicycle with an orange backdrop"></li>
+                        <li><img src="./assets/home-image-7.jpg" alt="an orange and white building"></li>
+                        <li><img src="./assets/home-image-8.jpg" alt="an orange beach umbrella that reads banana beach"></li>
+                    </ul>
 
-            <div class="wrapper">
-                <div class="sophie-journey">
-                    <div class="sophie-journey-img-wrapper">
-                        <figure>
-                            <img src="./assets/home-image-5.jpg" alt="a woman, Sophie, wearing an orange shirt, ripped blue jeans and sunglasses staring off into the distance. Highrise buildings sit in the background">
-                        </figure>
-                    </div>
-                    <div class="sophie-journey-text-wrapper">
-
-                        <h2>Sophie's Journey</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex accusamus qui ad, asperiores deserunt natus quis omnis? Dicta alias voluptatibus aspernatur neque voluptatum autem aut, similique, quibusdam ducimus recusandae consectetur consequatur. Fugiat tenetur id odio incidunt sapiente sed libero commodi assumenda iusto doloribus. Vero corrupti, quos quas vel consequatur adipisci.</p>
-
-                        <a href="#">Find out more</a>
-
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="image-gallery">
-            <div class="wrapper">
-
-                <ul>
-                    <li><img src="./assets/home-image-6.jpg" alt="a teal bicycle with an orange backdrop"></li>
-                    <li><img src="./assets/home-image-7.jpg" alt="an orange and white building"></li>
-                    <li><img src="./assets/home-image-8.jpg" alt="an orange beach umbrella that reads banana beach"></li>
-                </ul>
-
-            </div>
-        </section>
-
-    </main>
-    <footer>Copyright © 2018 HackerYou | Created at Juno College</footer>
+        </main>
+        <footer>Copyright © 2018 HackerYou | Created at <a href="junocollege.com">Juno College</a></footer>
 </body>
 </html>

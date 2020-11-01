@@ -1,3 +1,5 @@
+// STYLES FOR <ARTICLE> ELEMENTS ON BLOG PAGE
+
 .blog-container {
     display: flex;
     flex-direction: row;  
@@ -14,7 +16,7 @@
     font-weight: bold;
 }
 
-.right-col {
+.right-col-wrapper {
     width: 65%;
 }
 
@@ -27,6 +29,8 @@
 .blog-content  {
     margin: 20px 0 20px 0;
 }
+
+//STYLES FOR COMMENT SECTIONS 
 
 .comment-1,
 .comment-2 {
@@ -58,7 +62,7 @@
 }
 
 
-//Below styles are for the left-hand column aka blogger info 
+//STYLES FOR THE LEFT HAND COLUMN OF THE BLOG PAGE (ABOUT SOPHIE + RECENT POSTS)
 
 h4 {
     font-family: 'Roboto', sans-serif;
@@ -70,7 +74,7 @@ h4 {
     margin: 15px 0 15px 0;
 }
 
-.aside-col {
+.left-col-wrapper {
     margin-right: 20px;
     width: calc(35% - 20px);
 }
@@ -91,3 +95,42 @@ h4 {
     margin-top: 20px;
 }
 
+
+// RESPONSIVE STYLES
+
+@media (max-width: 940px) {
+
+    // BLOG PAGE
+
+    .right-col-wrapper {
+        width: calc(60% - 20px);
+        margin-right: 20px;
+    }
+
+    .left-col-wrapper {
+        margin-left: 20px;
+        width: calc(35% - 20px);
+    }
+
+}
+
+@media (max-width: 768px) {
+   
+
+}
+
+
+@media (max-width: 480px) {
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-col-wrapper,
+    .right-col-wrapper {
+        width: 85%;
+        margin: 10px auto;
+
+    }
+
+}

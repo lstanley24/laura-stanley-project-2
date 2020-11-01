@@ -1,3 +1,5 @@
+// GENERAL FORM STYLES
+
 fieldset {
   border: none;
   margin-top: 20px;
@@ -6,22 +8,27 @@ fieldset {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 35px 0 35px 0;
 }
 
 fieldset {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 input[type=text], 
 input[type=email] {
-  height: 50px;
-  padding-left: 15px;
-  margin: 10px;
-  width: calc(50% - 10px);
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 50% ;
   border: none;
 }
+
+input[type=text] {
+  margin-right: 10px
+}
+
 .name-email {
   display: flex;
   flex-direction: row;
@@ -32,23 +39,53 @@ textarea {
   resize: none;
   border: none; 
   padding: 15px;
+
 }
 
 button {
   width: 100%;
   border: none;
   padding: 10px 0 10px 0;
+  margin-top: 10px;
 }
 
 button:focus {
     border: 1px solid $orangey-yellow;
 }
 
-//styling the form found on the contact page
+// STYLING FOR CONTACT PAGE FORM
 
-.contact-form {
+.get-in-touch {
   width: 100%;
-  margin-left: 25px;
+  margin-left: 20px;
   padding: none;
 }
 
+
+// RESPONSIVE STYLING
+
+@media (max-width: 768px) {
+  .name-email {
+    flex-direction: column;
+
+  }
+  
+  input[type=text] {
+    margin-left: 0;
+    width: 100%
+  }
+
+  input[type=email] {
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .get-in-touch {
+    width: 73%;
+    margin: 0;
+
+  }
+
+}

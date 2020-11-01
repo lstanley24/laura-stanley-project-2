@@ -1,5 +1,18 @@
 // NAVIGATION STYLES
 
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: $black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 header{
     background-color: $orangey-yellow;
 }
@@ -46,13 +59,17 @@ nav li a:focus {
     text-transform: uppercase;
 }
 
-// Blog + Contact banner images 
+// STYLES FOR MOBILE NAVIGATION 
 
-.banner {
-    max-width: 100%;
-}
+    #toggle {
+	    display: none;
+    }
 
-//home page header styles 
+    i.fa-bars {
+        visibility: hidden;
+    }
+
+// STYLES FOR HOME PAGE HEADER 
 
 .home-header-container {
     background-color: $orangey-yellow;
@@ -83,4 +100,75 @@ nav li a:focus {
     margin-left: 25px;
 
 }
+
+// STYLES FOR RESPONSIVE LAYOUTS
+
+@media (max-width: 940px) {
+   
+    .additional-logo-text {
+        position: relative;
+        transform: translateY(-5px) translateX(50px) rotate(18deg);
+    }
+
+    .header-img-sophie {
+        position: inherit;
+        box-shadow: none;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .nav-wrapper {
+        width: 80%;
+    } 
+
+    .logo-text {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+  
+    // HAMBURGER MENU
+
+    nav {
+        position: absolute;
+        background-color: $orangey-yellow;
+        padding: 0 10px 0 10px;
+        display: none;
+    }
+
+    i.fa-bars {
+        visibility: visible;
+        font-size: 2.5rem;
+    }
+
+    input:checked + nav {
+        display: block;
+        position: relative;
+
+    }
+
+    #toggle {
+        position: absolute; 
+        left: -1000000px;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        display: none;
+
+    }
+
+    header img {
+        display: none;
+    }
+}
+
 

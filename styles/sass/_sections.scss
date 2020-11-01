@@ -34,46 +34,58 @@ section p {
     padding: 100px 0 100px 0;
 }
 
-// general styling for "Sophie's Favourite Things", "Where She's Travelled", and "Sophie's Journey" sections
-
-.favourite-things,
-.where-shes-travelled,
-.sophie-journey {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 50px 0 50px 0;
-}
-
-// general styling for the section that contains "Sophie's Favourite Things," "Where She's Travelled" + images. Primarily, changing the background colour to white.
+// general styling for the sections that contains "Sophie's Favourite Things" and "Where She's Travelled" + their images. Primarily, changing the background colour to white.
 
 .favourite-travelled-wrapper {
     background-color: $white;
 }
 
-//styling "Sophie's Favourite Things" section
+// some general styling of "Sophie's Favourite Things" and "Where She's Travelled" sections 
 
-.favourite-things-text {
-    max-width: 50%;
+.favourite-things-text,
+.where-shes-travelled-text {
+    max-width: 40%;
+    margin-top: 30px;
 }
 
-// .favourite-things-img {
-//     background-color: $rust-red;
-//     width: 110%;
-// }
+.favourite-things,
+.where-shes-travelled {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-// .favourite-things img {
-//     position: relative;
-//     top: -15px;
-//     left: 90px;
-// }
+//styling "Sophie's Favourite Things" section
+
+.favourite-things {
+    padding-bottom: 80px;
+}
+
+.favourite-things img {
+   box-shadow: 20px 25px $rust-red, -160px 25px $rust-red;
+   position: relative;
+   top: -25px;
+}
+
+.favourite-things-text {
+    padding-top: 75px;
+    text-align: left; 
+}
+
 
 // styling "Where's She's Travelled" section 
 
+.where-shes-travelled img {
+   box-shadow: 20px 25px $orangey-yellow, 160px 25px $orangey-yellow;
+   position: relative;
+   bottom: -25px;
+}
+
+.where-shes-travelled-text {
+    text-align: right;
 
 
-
-
+}
 
 // styling the photos/about/blog/get in touch section on home page
 
@@ -97,9 +109,14 @@ section p {
     margin: 0 35px 0 65px;
 }
 
-
-
 // styling "Sophie's Journey" section on home page 
+
+.sophie-journey {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 0 50px 0;
+}
 
 .sophie-journey {
     margin: 50px 0 50px 0;
@@ -107,7 +124,6 @@ section p {
 
 .sophie-journey-text-wrapper {
     max-width: 60%;
-  
 }
 
 .sophie-journey img {
@@ -116,7 +132,6 @@ section p {
 
 
 // styling the image gallery on the home page
-
 
 .image-gallery {
     display: flex;
@@ -143,7 +158,7 @@ section p {
     padding-bottom: 50px;
 }
 
-//the above contact section wrapper also wraps the contact form
+//the above contact section wrapper also wraps the contact form on the contact page
 
 .contact-socials {
     background-color: $white;
@@ -171,3 +186,88 @@ section p {
 .contact-section p {
     padding: 0;
 }
+
+// STYLES FOR MOBILE 
+
+
+
+
+
+
+// MOBILE STYLES FOR CONTACT PAGE
+
+
+@media (max-width: 768px) {
+
+    //HOME PAGE STYLES
+
+    .who-is-sophie {
+        margin: 0 auto;
+
+    }
+    .favourite-things,
+    .where-shes-travelled {
+        flex-direction: column;
+    }
+
+    .favourite-things img,
+    .where-shes-travelled img {
+        margin: 0 auto;
+        box-shadow: none;
+        top: 0;
+    }
+
+    .favourite-things-text,
+    .where-shes-travelled-text {
+        margin: 30px auto;
+        max-width: 85%;
+    }
+
+    .favourite-things-text {
+        padding: 0;
+
+    }
+
+    .quick-facts-wrapper {
+        margin-left: 25px;
+    }
+
+    .sophie-journey {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .sophie-journey-img-wrapper {
+        margin: 0 auto;
+    }
+
+    .sophie-journey-text-wrapper {
+        margin: 30px auto;
+
+    }
+
+    //CONTACT PAGE STYLE 
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 85%;
+        margin: 0 auto;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    //HOME PAGE STYLES
+
+    .quick-facts-wrapper {
+        flex-direction: column;
+
+    }
+  
+}
+
