@@ -38,7 +38,6 @@ header li a {
 
 nav li a:hover,
 nav li a:focus {
-
     font-family: 'Roboto', sans-serif;
     color: $white-shade;
     font-size: 2rem;
@@ -47,6 +46,8 @@ nav li a:focus {
     font-weight: bold;
     text-align: right;
 }
+
+//SPECIAL "SOPHIE" TEXT
 
 .nav-logo {
     font-family: 'Lora', serif;
@@ -59,15 +60,15 @@ nav li a:focus {
     text-transform: uppercase;
 }
 
-// STYLES FOR MOBILE NAVIGATION 
+//STYLES FOR MOBILE NAVIGATION 
 
-    #toggle {
-	    display: none;
-    }
+#toggle {
+    display: none;
+}
 
-    i.fa-bars {
-        visibility: hidden;
-    }
+i.fa-bars {
+    visibility: hidden;
+}
 
 // STYLES FOR HOME PAGE HEADER 
 
@@ -78,9 +79,13 @@ nav li a:focus {
     align-items: center;
 }
 
+//LARGE "SOPHIE" TEXT
+
 .logo-text {
     font-size: 15rem;
 }
+
+//CURVED WHITE TEXT
 
 .additional-logo-text {
     position: relative;
@@ -117,7 +122,6 @@ nav li a:focus {
 
 }
 
-
 @media (max-width: 768px) {
 
   .nav-wrapper {
@@ -148,7 +152,6 @@ nav li a:focus {
     input:checked + nav {
         display: block;
         position: relative;
-
     }
 
     #toggle {
@@ -163,11 +166,18 @@ nav li a:focus {
 
     .nav-logo {
         display: none;
-
     }
 
     header img {
         display: none;
+    }
+
+    .logo-container {
+        margin: 0 auto;
+    }
+
+    .logo-text {
+        font-size: 8rem;
     }
 }
 

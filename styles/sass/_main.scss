@@ -1,3 +1,4 @@
+// GENERAL STYLES FOR MAIN
 
 h1 {
     font-family: 'Lora', serif;
@@ -17,17 +18,54 @@ main {
     background-color: $white-shade;
 }
 
+//STYLES FOR CONTACT PAGE
+
+.contact-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.contact-section-wrapper p {
+    padding: 0;
+}
+
+.contact-section-wrapper h4 {
+    text-transform: lowercase;
+}
+
+// FORM CONTAINER (CONTACT PAGE)
+
+.get-in-touch {
+  width: 100%;
+  margin-left: 20px;
+  padding: none;
+}
+
 // STYLING FOR RESPONSIVE LAYOUTS
 
 @media (max-width: 940px) {
    h1 { 
         margin-left: 20px;
-   }
+    }
 }
 
 @media (max-width: 768px) {
     h1 {
         text-align: center;
+    }
+
+    //CONTACT PAGE STYLE 
+
+    .contact-section-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 85%;
+        margin: 0 auto;
     }
 }
 
@@ -37,6 +75,12 @@ main {
         font-size: 4rem;
         position: relative;
         top: 0px
+    }
+
+    // FORM CONTAINER (CONTACT PAGE)
+
+    .get-in-touch {
+        margin: 15px auto;
     }
 
 }

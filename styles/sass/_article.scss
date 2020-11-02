@@ -30,38 +30,6 @@
     margin: 20px 0 20px 0;
 }
 
-//STYLES FOR COMMENT SECTIONS 
-
-.comment-1,
-.comment-2 {
-    margin-top: 20px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 25px
-}
-
-.comment-2 {
-    border-bottom: 5px solid $orangey-yellow; 
-}
-
-.commenter-info {
-    color: $dark-grey-blue;
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 10px
-}
-
-.comment-img {
-    width: 25%;
-}
-
-.comment-text {
-    width: 75%;
-}
-
-
 //STYLES FOR THE LEFT HAND COLUMN OF THE BLOG PAGE (ABOUT SOPHIE + RECENT POSTS)
 
 h4 {
@@ -96,11 +64,40 @@ h4 {
 }
 
 
-// RESPONSIVE STYLES
+//STYLES FOR COMMENT BOXES (BLOG PAGE) 
+
+.comment-1,
+.comment-2 {
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.comment-2 {
+    border-bottom: 5px solid $orangey-yellow; 
+}
+
+.commenter-info {
+    color: $dark-grey-blue;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px
+}
+
+.comment-img {
+    width: 25%;
+}
+
+.comment-text {
+    width: 75%;
+}
+
+// RESPONSIVE STYLES FOR BLOG PAGE
 
 @media (max-width: 940px) {
-
-    // BLOG PAGE
 
     .right-col-wrapper {
         width: calc(60% - 20px);
@@ -111,14 +108,7 @@ h4 {
         margin-left: 20px;
         width: calc(35% - 20px);
     }
-
 }
-
-@media (max-width: 768px) {
-   
-
-}
-
 
 @media (max-width: 480px) {
     .blog-container {
@@ -132,5 +122,5 @@ h4 {
         margin: 10px auto;
 
     }
-
 }
+

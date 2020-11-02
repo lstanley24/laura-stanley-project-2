@@ -8,7 +8,6 @@ fieldset {
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 35px 0 35px 0;
 }
 
 fieldset {
@@ -50,24 +49,28 @@ button {
 }
 
 button:focus {
-    border: 1px solid $orangey-yellow;
+  border: 1px solid $orangey-yellow;
 }
 
-// STYLING FOR CONTACT PAGE FORM
 
-.get-in-touch {
-  width: 100%;
-  margin-left: 20px;
-  padding: none;
+// STYLING FOR BLOG PAGE FORM
+
+.blog-contact {
+  margin: 20px 0 20px 0;
+
 }
-
 
 // RESPONSIVE STYLING
 
 @media (max-width: 768px) {
+
+  .get-in-touch {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
   .name-email {
     flex-direction: column;
-
   }
   
   input[type=text] {
@@ -77,15 +80,5 @@ button:focus {
 
   input[type=email] {
     width: 100%;
-
   }
-}
-
-@media (max-width: 480px) {
-  .get-in-touch {
-    width: 73%;
-    margin: 0;
-
-  }
-
 }

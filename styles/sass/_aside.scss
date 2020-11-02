@@ -1,0 +1,51 @@
+// STYLING FOR CONTACT PAGE (SIDE-BAR THAT INCLUDES SOCIAL LINKS + EMAIL ADDRESS + ADDRESS)
+
+.contact-socials {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+}
+
+.contact-socials ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-socials a {
+    background-color: transparent;
+    color: $orangey-yellow;
+    padding-right: 20px;
+}
+
+.contact-socials a:hover,
+.contact-socials a:focus {
+    color: $accent;
+}
+
+// RESPONSIVE STYLES
+
+@media (max-width: 768px) {
+
+    //CONTACT PAGE STYLES 
+
+    .contact-socials {
+        width: 50%;
+        margin: 15px auto;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .contact-form {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+
+

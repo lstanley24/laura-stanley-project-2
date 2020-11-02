@@ -1,21 +1,21 @@
-//some general section styles 
+//GENERAL STYLES FOR ALL SECTIONS
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: $black;
     font-size: 4.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: $black;
     font-size: 3.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 section a {
@@ -26,21 +26,11 @@ section p {
     padding: 15px 0 35px 0; 
 }
 
-
-// styling "Who is Sophie?" section 
-
-.who-is-sophie {
-    width: 70%;
-    padding: 100px 0 100px 0;
-}
-
-// general styling for the sections that contains "Sophie's Favourite Things" and "Where She's Travelled" + their images. Primarily, changing the background colour to white.
+//STYLES FOR SECTIONS THAT CONTAIN "SOPHIE'S FAVOURITE THINGS" + "WHERE SHE'S TRAVLLED" (HOME PAGE)
 
 .favourite-travelled-wrapper {
     background-color: $white;
 }
-
-// some general styling of "Sophie's Favourite Things" and "Where She's Travelled" sections 
 
 .favourite-things-text,
 .where-shes-travelled-text {
@@ -55,7 +45,14 @@ section p {
     justify-content: space-between;
 }
 
-//styling "Sophie's Favourite Things" section
+// STYLES FOR "WHO IS SOPHIE?" SECTION (HOME PAGE)
+
+.who-is-sophie {
+    width: 70%;
+    padding: 100px 0 100px 0;
+}
+
+//STYLES FOR "SOPHIE'S FAVOURITE THINGS" SECTION (HOME PAGE)
 
 .favourite-things {
     padding-bottom: 80px;
@@ -72,8 +69,7 @@ section p {
     text-align: left; 
 }
 
-
-// styling "Where's She's Travelled" section 
+// STYLES FOR "WHERE'S SHE'S TRAVELLED" SECTION (HOME PAGE)
 
 .where-shes-travelled img {
    box-shadow: 20px 25px $orangey-yellow, 160px 25px $orangey-yellow;
@@ -83,11 +79,9 @@ section p {
 
 .where-shes-travelled-text {
     text-align: right;
-
-
 }
 
-// styling the photos/about/blog/get in touch section on home page
+// STYLES FOR PHOTO/ABOUT/BLOG/GET IN TOUCH ICON SECTION (HOME PAGE)
 
 .quick-facts-wrapper {
     display: flex;
@@ -109,7 +103,7 @@ section p {
     margin: 0 35px 0 65px;
 }
 
-// styling "Sophie's Journey" section on home page 
+// STYLES FOR "SOPHIE'S JOURNEY" SECTION (HOME PAGE)
 
 .sophie-journey {
     display: flex;
@@ -130,84 +124,37 @@ section p {
     box-shadow: 15px 15px $orangey-yellow;
 }
 
-
-// styling the image gallery on the home page
+// STYLES FOR IMAGE GALLERY (HOME PAGE)
 
 .image-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin: 50px 0 50px 0;
+    padding: 70px 0 70px 0;
+    background-color: $white;
 }
 
 .image-gallery ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-}
-
-//styling for the social media + email + address side-bar on the contact page 
-
-.contact-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-//the above contact section wrapper also wraps the contact form on the contact page
-
-.contact-socials {
-    background-color: $white;
-    display: flex;
-    flex-direction: column;
-    padding: 35px;
-    margin: 0;
-}
-
-.contact-socials ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.contact-socials a {
-    background-color: transparent;
-    color: $orangey-yellow;
-}
-
-.contact-socials a:hover,
-.contact-socials a:focus {
-    color: $accent;
-}
-
-.contact-section p {
-    padding: 0;
 }
 
 // STYLES FOR MOBILE 
 
-
-
-
-
-
-// MOBILE STYLES FOR CONTACT PAGE
-
-
-@media (max-width: 768px) {
+@media (max-width: 940px) {
 
     //HOME PAGE STYLES
 
     .who-is-sophie {
         margin: 0 auto;
-
     }
+
     .favourite-things,
     .where-shes-travelled {
         flex-direction: column;
+        padding: 50px 0 50px 0;
     }
 
     .favourite-things img,
@@ -225,12 +172,26 @@ section p {
 
     .favourite-things-text {
         padding: 0;
-
     }
 
     .quick-facts-wrapper {
         margin-left: 25px;
     }
+
+    .image-gallery li {
+        margin-left: 10px;
+        width: calc(100% - 30px) / 3; 
+    }
+
+    .image-gallery li:nth-child(3n) {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    //HOME PAGE STYLES
 
     .sophie-journey {
         flex-direction: column;
@@ -243,12 +204,11 @@ section p {
 
     .sophie-journey-text-wrapper {
         margin: 30px auto;
-
     }
 
     //CONTACT PAGE STYLE 
 
-    .contact-section {
+    .contact-section-wrapper {
         display: flex;
         flex-direction: column;
     }
@@ -256,18 +216,16 @@ section p {
     .contact-form {
         width: 85%;
         margin: 0 auto;
-
     }
 }
 
 
 @media (max-width: 480px) {
+
     //HOME PAGE STYLES
 
     .quick-facts-wrapper {
         flex-direction: column;
-
     }
-  
 }
 
